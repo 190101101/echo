@@ -1,0 +1,41 @@
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    .inner_content{
+        background-size: 150% 90%;
+    }
+}
+
+@media screen and (min-width: 968px) and (max-width: 1100px) {
+    .sidebar{
+        width: 40%;
+    }
+
+    .inner_content{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 967px) {
+    .sidebar{
+        width: 50%;
+    }
+
+    .inner_content{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+
+    .hidden_content{
+        display: block;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .inner_content{
+        width: 100%;
+        background-size: 100% 50%;
+    }
+}

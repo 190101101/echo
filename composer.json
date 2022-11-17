@@ -1,0 +1,27 @@
+{
+    "autoload":{
+        "psr-4":{
+            "core\\":"core/",
+            "modulus\\":"modulus/",
+            "library\\":"library/",
+            "Pattern\\":"Pattern/",
+            "Architecture\\":"Architecture/",
+            "middleware\\":"middleware/"
+        },
+        "classmap":[
+            "core/",
+            "modulus/",
+            "library/",
+            "Pattern/",
+            "Architecture/",
+            "middleware/"
+        ]
+    },
+    "require": {
+        "vlucas/valitron": "^1.4",
+        "guzzlehttp/guzzle": "^7.5",
+        "league/csv": "^9.7",
+        "phpoffice/phpspreadsheet": "^1.5",
+        "tecnickcom/tcpdf": "^6.5"
+    }
+}

@@ -1,0 +1,178 @@
+:root {
+  --main-clr: #e84118;
+  --green-clr: #8ac832;
+  --main-bg-clr: #14171a;
+  --main-bor-clr: #393a3b;
+  --main-font-fml: 'consolas';
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+pre {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow-x: hidden !important;
+    color: #e84118 !important;
+    font-weight: bold;
+    font-family: consolas;
+}
+
+pre ::selection {
+    background: none !important;
+    color: #fff !important;
+}
+
+pre::-webkit-scrollbar {
+    width: 3px;
+    height: 7px;
+}
+
+pre::-webkit-scrollbar-track {
+    background-image: linear-gradient(to right top, #000000, #100e0e, #1a1817, #22211e, #292a26);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+pre::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right top, #ffbc00, #ff9a08, #ff7624, #ff4c39, #ff004e);
+    outline: 1px solid slategrey;
+    min-height: 100px;
+}
+
+li{
+    /*list-style: none !important;*/
+}
+
+textarea{
+    resize: none !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+    outline: none;
+}
+
+body {
+    cursor: url('../../../files/system/content/cursor.png'), default;
+    background-color: #000 !important;
+    color: rgb(176, 179, 184) !important;
+    font-family: consolas !important;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0 auto;
+    transition: all .5s linear;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 1px;
+}
+
+body::-webkit-scrollbar-track {
+    background-image: linear-gradient(to right top, #000000, #100e0e, #1a1817, #22211e, #292a26);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right top, #ffbc00, #ff9a08, #ff7624, #ff4c39, #ff004e);
+    outline: 1px solid slategrey;
+}
+
+body ::selection {
+    background: #14171a !important;
+    color: var(--green-clr);
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+.click_block {
+    cursor: none !important;
+    pointer-events: none;
+}
+
+#wrapper {
+    max-width: 2500px;
+    margin: 0 auto;
+}
+
+.auth_content{
+    width: 100%;
+    position: relative;
+    font-family: 'consolas';
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+}
+
+.inner_content{
+    width: 65%;
+    height: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+    padding-bottom: 40px;
+    overflow: hidden;
+    background: url('../../../files/system/content/butterfly.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.sidebar{
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: #000;
+}
+
+.page_content{
+    position: relative;
+    height: 100%;
+    padding: 7px;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+.hidden_content{
+    display: none;
+    position: relative;
+    height: 100%;
+    padding: 7px;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+.about_content::-webkit-scrollbar {
+    width: 3px;
+    height: 7px;
+}
+
+.about_content::-webkit-scrollbar-track {
+    background-image: linear-gradient(to right top, #000000, #100e0e, #1a1817, #22211e, #292a26);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.about_content::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right top, #ffbc00, #ff9a08, #ff7624, #ff4c39, #ff004e);
+    outline: 1px solid slategrey;
+    min-height: 100px;
+}
+
+.about_content{
+    padding: 7px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 66px;
+}

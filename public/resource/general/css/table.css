@@ -1,0 +1,333 @@
+.table_content{
+    position: relative;
+    border: 1px solid #1D1A1A; 
+    padding: 10px; 
+    color: var(--main-clr);
+}
+
+.table_content .row:nth-child(1),
+.table_content .row:nth-child(2){
+  width: 110%;
+}
+
+.table_content  img{
+  width: 50px;
+}
+
+table.table-media {
+    margin: 15px 0;
+  width: 100%; 
+  border: none; 
+  border-collapse: collapse;
+}
+table.table-media thead {
+  font-weight: bold;
+}
+
+table.table-media th {
+  background: none !important;
+  font-size: 14px;
+  text-align: center;
+  color: var(--green-clr) !important;
+}
+
+table.table-media th img{
+  width: 15px;
+  max-width: 50px;
+}
+
+table.table-media td a img{
+    width: 15px;
+    height: 14px;
+}
+
+table.table-media td a img.big{
+    width: 50px;
+    height: 40px;
+}
+
+table.table-media td button img{
+    width: 15px;
+    height: 14px;
+}
+
+table.table-media td {
+  text-align: center;
+  padding: 5px 0px; 
+  border-bottom: 1px solid var(--green-clr);
+  background: none !important;
+  color: var(--main-clr);
+  font-size: 14px;
+}
+
+table.table-media td img{
+  width: 50px;
+  height: 50px;
+}
+
+.th-look img,
+.th-update img,
+.th-delete img{
+  width: 15px;
+  height: 15px;
+}
+
+
+table.table-media a.table-btn{
+  box-shadow: 0px 0px 5px 2px var(--main-clr);
+  padding: 2px 10px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.table-media td a img{
+  width: 14px;
+  height: 14px;
+}
+
+
+.page_content .dataTables_length select {
+    background: none;
+    color: var(--main-clr);
+    border: 1px solid var(--main-clr);
+}
+
+.page_content .dataTables_length select option {
+    background: #000 !important;
+    border: 1px solid var(--main-clr) !important;
+    outline: var(--main-clr);
+    color: var(--main-clr) !important;
+}
+
+.page_content .dataTables_filter input {
+    color: var(--main-clr);
+}
+
+.page_content .dataTables_filter input {
+    background: none !important;
+    box-shadow: 0px 0px 5px 2px var(--main-clr);
+    border: none;
+}
+
+.page_content .dataTables_length label,
+.page_content .dataTables_filter label {
+    color: #14171a;
+}
+
+
+@media screen and (max-width: 969px) {
+    table.table-media td[aria-label='status']{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 969px) {
+    td[aria-label='status']
+    {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+  .dataTables_length {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 580px) {
+  .table_content-page{
+    justify-content: center;
+  }
+
+  .admin-breadcrumb{
+    position: absolute;
+    left: 6px;
+  }
+
+  .add-block{
+    position: absolute;
+    right: 6px;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .table_content{
+    padding-bottom: 160px;
+  }
+
+  table.table-media thead {
+    display: none;    
+  }
+  table.table-media tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: none;
+  }
+  table.table-media td {
+    display: block;
+    text-align: right;
+    padding: 10px;
+
+  }
+
+  table.table-media td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+    color: var(--main-clr) !important;
+  }
+}
+
+
+table.table-media.horizontal thead {
+  display: none;    
+}
+table.table-media.horizontal tr {
+  display: block;
+  margin-bottom: 1rem;
+  border: none;
+}
+table.table-media.horizontal td {
+  display: block;
+  text-align: right;
+  padding: 10px;
+
+}
+table.table-media.horizontal td:before {
+  content: attr(aria-label);
+  float: left;
+  color: var(--main-clr) !important;
+}
+
+table.table-media.horizontal td[aria-label='status']{
+    width: 100% !important;
+}
+
+table.table-media.horizontal.no-table td {
+  display: block;
+  text-align: left;
+  padding: 10px;
+
+}
+
+table.table-media td[aria-label='delete'],
+table.table-media td[aria-label='update']
+{
+    min-width: 43px !important;
+}
+
+table.table-media td[aria-label='#']
+{
+    min-width: 30px !important;
+}
+
+
+
+/*pagination*/
+.pagination{
+    transform: translateX(-30%);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 30px;
+    position: absolute;
+    left: 0;
+}
+
+.pagination>li {
+    padding: 2px;
+    display: inline;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    outline: none !important;
+    padding: 8px 10px;
+    transition: all .1s linear;
+    color: #E1E3ED !important;
+    background-image: linear-gradient(to top, #1a1c24 0, #20232a 100%);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000;
+    transition: all .2s linear;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    transition: all .2s linear;
+
+}
+
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+    border-top-right-radius: 4px;
+    order-bottom-right-radius: 4px;
+    transition: all .2s linear;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+    background-image: linear-gradient(to bottom, #1a1c24 0, #20232a 100%);
+    transition: all .2s linear;
+    color: #8ac832 !important;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    color: #8ac832 !important;
+    transition: all .2s linear;
+    background-image: linear-gradient(to top, #1a1c24 0, #20232a 100%);
+}
+
+.pagination>.disabled>a,
+.pagination>.disabled>a:focus,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>span,
+.pagination>.disabled>span:focus,
+.pagination>.disabled>span:hover {
+    background-image: linear-gradient(to bottom, #1a1c24 0, #20232a 100%);
+    transition: all .2s linear;
+}
+
+.pagination-lg>li>a,
+.pagination-lg>li>span {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    outline: none !important;
+    transition: all .2s linear;
+}
+
+.pagination-lg>li>a:focus,
+.pagination-lg>li>a:active,
+.pagination-lg>li>span:focus,
+.pagination-lg>li>span:active {
+    outline: none !important;
+}
+
+.dataTables_info{
+    color: #14171a !important;
+}
+
+.dataTables_info::selection {
+    background: #14171a !important;
+    color: #000 !important;
+}

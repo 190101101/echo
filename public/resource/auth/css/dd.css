@@ -1,0 +1,17 @@
+.main_content{
+    width: 100%;
+    position: relative;
+    font-family: 'consolas';
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+}
+
+.inner_content{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
